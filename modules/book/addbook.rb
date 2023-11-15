@@ -13,6 +13,21 @@ module AddBook
     gets.chomp
   end
 
+  def input_date
+    puts 'Please Enter publish date in following format: yyyy/mm/dd'
+    gets.chomp
+  end
+
+  def input_publisher
+    puts 'Enter Publisher'
+    gets.chomp
+  end
+
+  def input_cover_state
+    puts 'Enter Cover state'
+    gets.chomp
+  end
+
   def add_label(book)
     puts 'Add a label'
     puts 'Enter Label Color'
