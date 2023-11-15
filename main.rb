@@ -4,6 +4,23 @@ class Main
   def initialize
     @app = App.new
   end
+
+  def display_options
+    puts 'Please choose one of the options: '
+    puts '01 - List all books'
+    puts '02 - List all music albums'
+    puts '03 - List all movies'
+    puts '04 - List all games'
+    puts '05 - List all genres (e.g: "Comedy", "Thriller")'
+    puts '06 - List all labels (e.g: "Gift", "New")'
+    puts '07 - List all authors (e.g: "Stephen King")'
+    puts '08 - List all sources (e.g: "From a Friend", "Online shop")'
+    puts '09 - Add Book'
+    puts '10 - Add a Music Album'
+    puts '11 - Add Movie'
+    puts '12 - Add a Game'
+    puts '13 - Exit'
+  end
 end
 
 Main.new
