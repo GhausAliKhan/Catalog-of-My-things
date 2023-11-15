@@ -26,4 +26,10 @@ class Item
     @source = source
     source.items << self unless source.items.include?(self)
   end
+
+  def can_be_archived?
+    current_year = Date.today.year
+    publish_year = Date.parse(@publish_date).year
+    current_year - publish_year > 10
+  end
 end
