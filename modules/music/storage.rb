@@ -48,6 +48,6 @@ module Storage
     genre_hash.each do |genre|
       genre_obj = Genre.new(name: genre['name'], id: genre['id'])
       @genres << genre_obj
-    end
-  end
+    end
+  end
 end

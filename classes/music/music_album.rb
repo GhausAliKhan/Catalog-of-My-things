@@ -19,6 +19,6 @@ class MusicAlbum < Item
       'publish_date' => @publish_date,
       'on_spotify' => @on_spotify,
       'genre' => @genre.name || ''
-    }
-  end
+    }
+  end
 end

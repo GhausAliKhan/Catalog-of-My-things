@@ -12,6 +12,6 @@ describe Genre do
       subject.add_item(item)
       expect(subject.items).to include(item)
       expect(item.genre).to eq(subject)
-    end
-  end
+    end
+  end
 end

@@ -24,6 +24,6 @@ describe MusicAlbum do
       it 'returns false regardless of release year' do
         expect(subject.can_be_archived?).to be(false)
       end
-    end
-  end
+    end
+  end
 end
