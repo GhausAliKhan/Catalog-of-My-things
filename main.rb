@@ -3,6 +3,15 @@ require_relative 'app'
 class Main
   def initialize
     @app = App.new
+    prompt
+  end
+
+  def prompt
+    puts 'Catalogue of My things!'
+    loop do
+      display_options
+      break if option == 13
+    end
   end
 
   def display_options
