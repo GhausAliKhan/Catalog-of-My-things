@@ -1,5 +1,7 @@
 require_relative '../classes/book/label'
 require_relative '../classes/item'
+require 'rspec'
+
 
 RSpec.describe Label do
   let(:label_title) { 'Fiction' }
@@ -9,7 +11,7 @@ RSpec.describe Label do
 
   # Test the initialization of the Book class
   describe '#initialize' do
-    it 'creates a book with the correct cover state  and publisher' do
+    it 'creates a book with the correct cover state and publisher' do
       expect(label.title).to eq(label_title)
       expect(label.color).to eq(label_color)
       expect(label.id).to eq(id)

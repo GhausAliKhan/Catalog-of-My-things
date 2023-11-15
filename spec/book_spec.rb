@@ -1,4 +1,5 @@
 require_relative '../classes/book/book'
+require 'rspec'
 
 RSpec.describe Book do
   let(:book_publisher) { 'John Doe' }
@@ -18,12 +19,13 @@ RSpec.describe Book do
   describe '#can_be_archived' do
     context 'when cover state is bad' do
       it 'returns true' do
-        expect(book.can_be_archived).to be true
+        expect(book.can_be_archived?).to be true # Add parentheses here
       end
     end
 
     context 'when cover state is good' do
       let(:book_cover_state) { 'good' }
+
       it 'returns true if published more than 10 years ago' do
         expect(book.can_be_archived?).to be false
       end
