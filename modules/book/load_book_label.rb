@@ -1,4 +1,3 @@
-For load_book_label.rb
 require 'json'
 
 module LoadData
