@@ -1,4 +1,3 @@
-For label_spec.rb
 require_relative '../classes/book/label'
 require_relative '../classes/item'
 
