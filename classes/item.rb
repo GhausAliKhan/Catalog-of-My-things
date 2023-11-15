@@ -7,4 +7,23 @@ class Item
     @id = id || Random.rand(1..1000)
     @publish_date = publish_date
   end
+
+  def add_genre(genre)
+    @genre = genre
+  end
+
+  def add_author(author)
+    @author = author
+    author.items << self unless author.items.include?(self)
+  end
+
+  def add_label(label)
+    @label = label
+    @label.add_item(self)
+  end
+
+  def add_source(source)
+    @source = source
+    source.items << self unless source.items.include?(self)
+  end
 end
