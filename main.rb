@@ -11,6 +11,7 @@ class Main
     loop do
       display_options
       option = take_input
+      @app.process_option(option)
       break if option == 13
     end
   end

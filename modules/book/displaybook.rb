@@ -1,7 +1,7 @@
 module DisplayBook
   def display_books
     if @books.empty?
-      puts 'No books availabel.'
+      puts 'No books available.'
     else
       @books.each_with_index do |book, index|
         label_title = book.label ? book.label.title : 'N/A'
@@ -11,5 +11,5 @@ module DisplayBook
 
     puts 'Press Enter to continue!'
     gets.chomp
-  end
+  end
 end
