@@ -1,5 +1,4 @@
 class App
-
   attr_accessor :books, :label
 
   include Modules
