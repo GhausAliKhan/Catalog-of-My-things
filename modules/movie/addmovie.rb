@@ -2,7 +2,7 @@ module AddMovie
   def add_movie
     publish_date = input_date
     silent = input_silent
-    movie = Movie.new(publish_date, silent:)
+    movie = Movie.new(publish_date, silent: silent)
     @movies << movie
     new_source = add_sources
     existing_source = @sources.find { |source| source.name == new_source }
