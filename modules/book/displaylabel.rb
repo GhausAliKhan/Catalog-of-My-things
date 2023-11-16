@@ -10,5 +10,5 @@ module DisplayLabel
 
     puts 'Press Enter to continue!'
     gets.chomp
-  end
+  end
 end
