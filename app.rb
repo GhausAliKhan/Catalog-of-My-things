@@ -1,11 +1,28 @@
+require_relative 'classes/movie/movie'
+require_relative 'classes/movie/source'
+require_relative 'classes/book/book'
+require_relative 'classes/book/label'
+require_relative 'classes/music/music_album'
+require_relative 'classes/music/genre'
+require_relative 'classes/games/game'
+require_relative 'classes/games/author'
+require_relative 'modules/modules'
+
 class App
-  attr_accessor :books, :label
+  attr_accessor :movies, :books, :label
 
   include Modules
 
   def initialize
+    @movies = []
+    @sources = []
     @books = []
     @label = []
+    @genres = []
+    @music_albums = []
+    @games = []
+    @authors = []
+    load_collections
   end
 
   def process_option(option)
