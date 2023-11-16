@@ -1,4 +1,5 @@
 class App
+
   attr_accessor :books, :label
 
   include Modules
@@ -26,5 +27,10 @@ class App
       puts 'Thank you for using this app!'
       save_and_exit
     end
+  end
+
+  def save_and_exit
+    save_collections
+    exit
   end
 end
