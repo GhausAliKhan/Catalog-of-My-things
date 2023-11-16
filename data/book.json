@@ -1,16 +1,9 @@
 [
-    {
-      "cover_state": "good",
-      "publisher": "lana",
-      "publish_date": "2021/03/05",
-      "id": 325,
-      "label": "New books"
-    },
-    {
-      "cover_state": "bad",
-      "publisher": "Rose",
-      "publish_date": "2016/12/19",
-      "id": 831,
-      "label": "New books"
-    }
-  ]
+  {
+    "cover_state": "good",
+    "publisher": "First publisher",
+    "publish_date": "2022/07/23",
+    "id": 767,
+    "label": "one year old books"
+  }
+]
