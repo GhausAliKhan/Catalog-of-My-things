@@ -4,7 +4,7 @@ require_relative '../classes/item'
 describe Genre do
   let(:name) { 'Rock' }
 
-  subject { described_class.new(name: name) }
+  subject { described_class.new(name:) }
 
   describe '#add_item' do
     it 'adds an item to the genre and sets genre for the music album' do
