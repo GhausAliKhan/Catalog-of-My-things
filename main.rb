@@ -11,7 +11,11 @@ class Main
     loop do
       display_options
       option = take_input
-      @app.process_option(option)
+      if option.positive? && option < 7
+        @app.first_six_cases(option)
+      else
+        @app.last_six_cases(option)
+      end
       break if option == 13
     end
   end
