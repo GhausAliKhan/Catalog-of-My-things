@@ -2,7 +2,6 @@ require_relative '../classes/book/label'
 require_relative '../classes/item'
 require 'rspec'
 
-
 RSpec.describe Label do
   let(:label_title) { 'Fiction' }
   let(:label_color) { 'green' }
