@@ -1,4 +1,5 @@
 require_relative '../classes/book/book'
+require 'rspec'
 
 RSpec.describe Book do
   let(:book_publisher) { 'John Doe' }
