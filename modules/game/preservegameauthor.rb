@@ -1,4 +1,3 @@
-For_preservegameauthor.rb
 require 'json'
 
 module PreserveGameAuthor
@@ -17,7 +16,6 @@ module PreserveGameAuthor
         multiplayer: game.multiplayer,
         last_played_at: game.last_played_at,
         author: game.author.first_name
-
       }
     end
     save_to_file(GAMES_FILE_NAME, game_hash)
@@ -32,5 +30,5 @@ module PreserveGameAuthor
       }
     end
     save_to_file(AUTHOR_FILE_NAME, author_hash)
-  end
+  end
 end

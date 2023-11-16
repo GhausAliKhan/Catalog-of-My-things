@@ -33,6 +33,6 @@ module LoadGameAuthor
       author_obj = @authors.find { |author| author.first_name == game['author'] }
       game_obj.add_author(author_obj)
       @games << game_obj
-    end
-  end
+    end
+  end
 end
