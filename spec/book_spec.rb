@@ -16,10 +16,10 @@ RSpec.describe Book do
     end
   end
 
-  describe '#can_be_archived' do
+  describe '#can_be_archived?' do
     context 'when cover state is bad' do
       it 'returns true' do
-        expect(book.can_be_archived).to be true
+        expect(book.can_be_archived?).to be true
       end
     end
 
