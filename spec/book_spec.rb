@@ -29,7 +29,7 @@ RSpec.describe Book do
         expect(book.can_be_archived?).to be false
       end
 
-      it 'returns false if published less than  10 years ago' do
+      it 'returns false if published less than 10 years ago' do
         book_publish_date = '2020-08-07'
         book = Book.new(book_cover_state, book_publisher, book_publish_date)
         expect(book.can_be_archived?).to be false
