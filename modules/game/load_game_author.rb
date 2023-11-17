@@ -31,7 +31,7 @@ module LoadGameAuthor
       game_obj = Game.new(game['publish_date'], game['multiplayer'], game['last_played_at'])
       game_obj.id = game['id']
       author_obj = @authors.find { |author| author.first_name == game['author'] }
-      game_obj.add_author(author_obj)
+      game_obj.author = author_obj
       @games << game_obj
     end
   end

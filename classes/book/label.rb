@@ -10,6 +10,6 @@ class Label
 
   def add_item(item)
     @items << item
-    item.label = self
+    item.instance_variable_set(:@label, self)
   end
 end

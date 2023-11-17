@@ -6,7 +6,7 @@ module AddGame
     game = Game.new(publish_date, multiplayer, last_played_at)
     @games << game
     author = add_author
-    game.add_author(author)
+    game.author = author
     @authors << author
     puts 'Game Added Successfully'
     puts 'Press any key to continue'

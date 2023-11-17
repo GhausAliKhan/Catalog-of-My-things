@@ -35,7 +35,7 @@ module Storage
       music_obj = MusicAlbum.new(publish_date: music['publish_date'], on_spotify: music['on_spotify'],
                                  id: music['id'])
       genre_obj = @genres.find { |genre| genre.name == music['genre'] }
-      music_obj.add_genre(genre_obj)
+      music_obj.genre = genre_obj
       @music_albums << music_obj
     end
   end

@@ -10,7 +10,7 @@ class Genre
 
   def add_item(item)
     @items << item
-    item.add_genre(self)
+    item.genre = self
   end
 
   def to_hash

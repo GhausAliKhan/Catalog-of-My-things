@@ -31,7 +31,7 @@ module LoadMovieSource
       movie_obj = Movie.new(movie['publish_date'], silent: movie['silent'])
       movie_obj.id = movie['id']
       source_obj = @sources.find { |source| source.name == movie['source'] }
-      movie_obj.add_source(source_obj)
+      movie_obj.source = source_obj
       @movies << movie_obj
     end
   end
